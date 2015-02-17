@@ -1,0 +1,17 @@
+<h4>
+  {{#ifCond status '==' 'success'}}
+    <i class="fa text-success fa-check-circle"></i>
+  {{/ifCond}}
+  {{#ifCond status '==' 'testing'}}
+    <i class="fa text-primary fa-spin fa-refresh"></i>
+  {{/ifCond}}
+  {{#ifCond status '==' 'error'}}
+    <i class="fa text-danger fa-times-circle"></i>
+  {{/ifCond}}
+  <a href='#' class='goto_build' data-build-id="{{id}}" data-project-id="{{project_id}}">
+    {{branch}} <small>{{message}}</small>
+  </a>
+  <a href='#' class='pull-right restart_build' data-build-id="{{id}}">
+    <i class="fa text-info fa-refresh"></i>
+  </a>
+</h4>

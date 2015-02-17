@@ -1,0 +1,11 @@
+{
+  "name": "shipofox",
+  "title": "shipofox",
+  "id": "jid1-eP2BBe6tIf8vHg",
+  "description": "Get Codeship build notifications with Shipofox",
+  "icon": "data/img/shipscope_icon_48.png",
+  "icon64": "data/img/shipscope_icon_128.png",
+  "author": "Enrico Carlesso <enricocarlesso@gmail.com>",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}

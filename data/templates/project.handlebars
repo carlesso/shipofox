@@ -1,0 +1,19 @@
+<div class="panel panel-default" id="project_{{id}}">
+  <div id="collapseListGroupHeading{{id}}" role="tab" class="panel-heading">
+    <h4 class="panel-title">
+      <a aria-controls="collapseListGroup{{id}}" aria-expanded="false" href="#collapseListGroup{{id}}" data-toggle="collapse" class="collapsed">
+        <i class="fa text-success fa-chevron-circle-right"></i>
+        {{repository_name}}
+      </a>
+    </h4>
+  </div>
+  <div aria-labelledby="collapseListGroupHeading{{id}}" role="tabpanel" class="panel-collapse collapse" id="collapseListGroup{{id}}" aria-expanded="false" style="height: 0px;">
+    <ul class="list-group">
+      {{#each builds}}
+        <li class="list-group-item" id="build_{{id}}">
+          {{> build}}
+        </li>
+      {{~/each}}
+    </ul>
+  </div>
+</div>

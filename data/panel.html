@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <i id='loading' style="display:none" class="fa fa-spinner fa-4x text-success fa-spin"></i>
+    <div class="container-fluid">
+      <form role='form' id='api_form'>
+        <div id="api_errors" class="alert alert-danger" style="display: none">
+          <h3>API Key not valid</h3>
+          Codeship response: <span id="api_error_message"></span>
+        </div>
+        <h3>CodeShip API Key</h3>
+        <textarea id='api_key' class='form-control' rows='2' placeholder='Paste your Codeship API Key' autofocus></textarea>
+        <span class='help-block'>Copy your API Key from your Codeship account</span>
+        <div class='form-group pull-right'>
+          <button id='options_submit' type="submit" class='btn btn-primary'>Save</button>
+        </div>
+      </form>
+
+      <div id="projects" style="display:none">
+        <h3>
+          ShipoFox
+          <a href='#' id='gotoOptions' class='pull-right btn btn-warning btn-xs'>Options</a>
+        </h3>
+        <div id="offline" style="display:none" class='alert alert-info'>
+          <strong>It looks like you're offline. I will update as soon as I will be able to access codeship.com</strong>
+        </div>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
