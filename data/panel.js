@@ -31,12 +31,9 @@ $(document).on('submit', '#api_form', function(e) {
   $('#projects').show();
 });
 
-$(document).ready(function() {
-  if (typeof(window.api_key) == 'undefined') {
-    $('#api_form').hide();
-  } else {
-    $('#api_form').show();
-  }
+self.port.on('api_key_stored', function(api_key) {
+  $('#api_form').hide();
+  $('#api_key').val(api_key);
 });
 
 $(document).on('click', '.goto_build', function(e) {
