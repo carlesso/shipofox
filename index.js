@@ -1,3 +1,13 @@
+// var self = require('sdk/self');
+
+// // a dummy function, to show how tests work.
+// // to see how to test this function, look at test/test-index.js
+// function dummy(text, callback) {
+//   callback(text);
+// }
+
+// exports.dummy = dummy;
+
 var { ToggleButton } = require('sdk/ui/button/toggle');
 var { setInterval, clearInterval } = require("sdk/timers");
 var panels = require("sdk/panel");
@@ -69,6 +79,7 @@ panel.port.on('goto_build', function(data) {
   tabs.open("https://codeship.com/projects/" + data.projectId + "/builds/" + data.buildId);
   panel.hide();
 });
+
 panel.port.on('restart_build', function(build_id) {
   restartBuild(build_id);
 });

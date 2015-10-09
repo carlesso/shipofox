@@ -1,4 +1,5 @@
 # Shipofox, Get Codeship build notifications
+Unofficial Codeship notifier for Firefox. Get Codeship build notifications with Shipofox# Shipofox, Get Codeship build notifications
 
 Shipofox is the Firefox version of [Shipscope](https://chrome.google.com/webstore/detail/shipscope/jdedmgopefelimgjceagffkeeiknclhh) chrome extension.
 
@@ -12,7 +13,11 @@ This Firefox extension uses [Handlebars](http://handlebarsjs.com/) for two templ
 
 ```bash
 $ handlebars data/templates/build.handlebars data/templates/project.handlebars -f data/templates.js
-$ cfx run
+$ jpm run
 ```
 
 This will precompile compile build and project handlebars.
+
+## Changelog
+
+* **v0.5.0** moved from cfx to jpm build system
